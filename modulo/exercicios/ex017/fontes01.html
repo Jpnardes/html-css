@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'work Sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas 
+            cm, mm, in, *px*, pt, pc
+            
+            Medidas Relativas
+            *em*, ex, rem, vw, vh, %
+            geralmente 16px = 1em
+            foca no *em* ou px(oficialmente recomendadas pela w3c)
+            */
+            font-size: 1em ;
+
+            /* lighter normal bold bolder*/
+
+        }
+        h1 { 
+            /* Shorthand font            
+
+    	    font-family: 'work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            -> font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bolder 3em 'work sans', sans-serif;
+        }
+        h2 {
+            font: bold 2em 'work sans';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti, iure voluptate maiores vitae nesciunt odio nostrum ad et architecto? Dicta, in. Ducimus voluptate omnis, debitis reiciendis at officiis veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos omnis aliquid est magni dolorum at officia quaerat similique rerum animi et quibusdam minus officiis, perspiciatis vitae totam labore quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus ducimus optio delectus voluptatem praesentium quas fugiat similique accusantium! Consectetur dolorum, modi placeat nulla provident cumque tempora? Corrupti, illum quae?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt optio modi rem! Itaque laborum dolorem minima rem veritatis quos a. Ratione, ea? Perferendis sit impedit repellat, fuga non quasi ea? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi voluptate iure consectetur quia nobis ipsam earum quis nihil dolorum magni est aliquam dolorem corrupti enim, ducimus, veniam quo sunt fugiat! </p>
+</body>
+</html>
