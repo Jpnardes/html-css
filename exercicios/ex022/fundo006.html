@@ -11,13 +11,19 @@
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
             /* background-size: cover ( cobre todo o fundo mantendo o seu tamanho em proporção) / contain(100% da imagem sem distorcer)/ 100% 100% / auto / pixel que voce determinar */
+            background-attachment: fixed;
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat cover fixed;
+            /*  Shorthand - Background
+            Color > image > position > repeat > [size](ainda nao funciona direito em todos os browsers) > attachment */
+            
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
