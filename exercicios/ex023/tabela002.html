@@ -14,24 +14,42 @@
             width: 500px;
             border-collapse: collapse;
         }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+
         thead, tfoot {
             background-color: rgb(49, 49, 49);
             color: white;
         }
-        td.num{
-            text-align: right;
-        }
+
         caption{
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
         }
-    </style>
+        
+        tbody > tr:nth-child(even) 
+        /* even = par / odd = impar / 2n par / 2n-1 impar/ valores comuns tbm funcionam */
+        {
+            background-color: rgb(176, 176, 176);    
+            text-decoration: underline;
+        }
+
+        tbody > tr:nth-child(odd)
+        {
+            background-color: white;
+            font-weight: bold;
+        }
+
+        td.num{
+        text-align: right;
+        }
+
+        </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
