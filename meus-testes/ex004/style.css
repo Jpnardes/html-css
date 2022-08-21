@@ -1,2 +1,58 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: RubikDirt ;
+    src: url(fontes/Rubik_Dirt/RubikDirt-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --cor1:rgb(235, 198, 198);
+    --cor2:rgb(71, 180, 216);
+    --cor3:rgb(182, 238, 70);
+    --cor4:rgb(255, 66, 94);
+    
+    --fonte-padrao: arial, verdana, sans-serif;
+    --fonte-titulo:'RubikDirt', cursive;
+    --fonte-diferente: 'Prompt', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor1);
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
+header{
+    background-image:linear-gradient(to right,rgb(71, 180, 216), #ffff) ;
+    height: 170px;
+    width: 100vw;
+    box-shadow: 0px 1px 1px 0px rgb(0 0 0 / 40%);
+}
+header > h1{
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    font-weight: normal;
+    padding: 10px 0px 10px 0px;
+}
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+nav{
+    background-color: rgba(47, 198, 148, 0.531);
+    border: 1px solid black;
+    padding: 5px 0px 10px 0px;
+    margin-top: 15px;
+    text-align: left;
+    box-shadow: 1px 1px 0px rgb(0 0 0 / 40%);
+}
+nav > a{
+
+}
