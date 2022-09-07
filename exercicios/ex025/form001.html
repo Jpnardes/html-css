@@ -8,8 +8,10 @@
 </head>
 <body>
     <h1>Meu primeiro formulário!</h1>
-    <form action="cadastro.php" autocomplete="off">
-
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--METHOD(escolha entre "get" ou "post" para ocultar suas informações do URL)(Get padrão limite 3k letras-nao usa em senhas e fotos e arquivos)
+        (Get é a função para compartilhar e nao esconde as informações presentes no URL) 
+        (Post tira as informações principais da URL porem não criptografa nada apenas não deixa aparente se a pessoa vasculhar no código raiz ira encontrar com facilidade)-->
         <p><label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome">
         </p>
