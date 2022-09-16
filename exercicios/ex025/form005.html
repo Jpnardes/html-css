@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Testando Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <!--Pra poder só dar check em uma box é necessário por o mesmo nome! nos botöes de RADIO-->
+            <legend>Sexo</legend>
+            <input type="radio" name="Sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label><br>
+            <input type="radio" name="Sexo" id="isxfem" checked value="F"><label for="isxfem">Feminino</label>
+        </fieldset>
+        <!-- ID igual ao da Label pra identificar o box e a escrita, label identifica qual box é referente a qual texto!!!-->
+        <fieldset>    
+
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbase" id="iesbas" checked><label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label><br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label>
+
+        </fieldset>
+            
+               
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
